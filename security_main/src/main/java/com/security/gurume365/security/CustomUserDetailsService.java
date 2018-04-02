@@ -18,15 +18,16 @@ public class CustomUserDetailsService implements UserDetailsService {
 
 	@Inject
 	UsersDAO dao;
-	
+//시작
 	@Override
 	public Users loadUserByUsername(String username) throws UsernameNotFoundException {
 		// 디비에서 유저정보를 불러오는 메소드. 이것을 AutenticationProvider에서 인증을 통함
 		Users userInfo = null;
-		try{
- 			//userInfo = dao.selectUsers(username);
-		}catch (Exception e){
+		try {
+			// userInfo = dao.selectUsers(username);
+		} catch (Exception e) {
 			e.printStackTrace();
+		}
 		return userInfo;
-	} 
+	}
 }
