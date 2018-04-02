@@ -55,7 +55,7 @@ implements AuthenticationProvider{
 		
 		return new UsernamePasswordAuthenticationToken(userInfo, null, authorities);
 		
-		/*
+		/*ㄴㅇㅇㅇ
 		final String name = authentication.getName();
 		final String password = authentication.getCredentials().toString();
 		if(name.equals("admin") && password.equals("system")){
