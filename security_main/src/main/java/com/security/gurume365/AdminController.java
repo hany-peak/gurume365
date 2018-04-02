@@ -8,7 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-//연습ㅁㄴㅇㄹ
+//�뿰�뒿�뀅�꽩�뀋�꽮
+//lllllll
 @Controller
 public class AdminController {
 	private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
@@ -16,7 +17,7 @@ public class AdminController {
 	@RequestMapping(value = "/admin/adminHome", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome Admin Home!");
-		//디지몬 진화ㅁㄴㅇㄹ
+
 		return "admin/adminHome";
 	}
 }
