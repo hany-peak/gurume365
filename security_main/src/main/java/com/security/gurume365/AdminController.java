@@ -16,7 +16,7 @@ public class AdminController {
 	@RequestMapping(value = "/admin/adminHome", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome Admin Home!");
-		
+		//디지몬 진화
 		return "admin/adminHome";
 	}
 }
